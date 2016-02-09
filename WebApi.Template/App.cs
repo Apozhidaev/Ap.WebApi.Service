@@ -1,4 +1,6 @@
-﻿namespace WebApi.Template
+﻿using WebApi.Template.Modules.Api;
+
+namespace WebApi.Template
 {
     public class App
     {
@@ -8,7 +10,7 @@
         {
             _modules = new IModule[]
             {
-  
+                new ApiModule()
             };
             foreach (var module in _modules)
             {
